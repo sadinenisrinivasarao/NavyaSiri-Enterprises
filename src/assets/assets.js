@@ -74,7 +74,7 @@ export const products = [
     {
         image: list_item1,
         name: "Item 1",
-        sku: "123456",
+        sku: "1",
         description: "This is product 1",
         content: "add some content to show in product page......",
         Popular: 1,
@@ -83,7 +83,7 @@ export const products = [
     {
         image: list_item2,
         name: "Item 2",
-        sku: "123456",
+        sku: "2",
         description: "This is product 2",
         content: "add some content to show in product page......",
         Popular: 1,
@@ -92,7 +92,7 @@ export const products = [
     {
         image: list_item3,
         name: "Item 3",
-        sku: "123456",
+        sku: "3",
         description: "This is product 3",
         content: "add some content to show in product page......",
         Popular: 1,
@@ -101,7 +101,7 @@ export const products = [
     {
         image: list_item4,
         name: "Item 4",
-        sku: "123456",
+        sku: "4",
         description: "This is product 4",
         content: "add some content to show in product page......",
         Popular: 1,
@@ -110,7 +110,7 @@ export const products = [
     {
         image: list_item5,
         name: "Item 5",
-        sku: "123456",
+        sku: "5",
         description: "This is product 5",
         content: "add some content to show in product page......",
         Popular: 1,
@@ -119,7 +119,7 @@ export const products = [
     {
         image: list_item6,
         name: "Item 6",
-        sku: "123456",
+        sku: "6",
         description: "This is product 6",
         content: "add some content to show in product page......",
         Popular: 1,
@@ -128,7 +128,7 @@ export const products = [
     {
         image: list_item7,
         name: "Item 7",
-        sku: "123456",
+        sku: "7",
         description: "This is product 7",
         content: "add some content to show in product page......",
         Popular: 0,
@@ -137,7 +137,7 @@ export const products = [
     {
         image: list_item8,
         name: "Item 8",
-        sku: "123456",
+        sku: "8",
         description: "This is product 8",
         content: "add some content to show in product page......",
         Popular: 0,
@@ -146,7 +146,7 @@ export const products = [
     {
         image: list_item9,
         name: "Item 9",
-        sku: "123456",
+        sku: "9",
         description: "This is product 9",
         content: "add some content to show in product page......",
         Popular: 0,
@@ -155,7 +155,7 @@ export const products = [
     {
         image: list_item10,
         name: "Item 10",
-        sku: "123456",
+        sku: "10",
         description: "This is product 10",
         content: "add some content to show in product page......",
         Popular: 0,
@@ -164,7 +164,7 @@ export const products = [
     {
         image: list_item11,
         name: "Item 11",
-        sku: "123456",
+        sku: "11",
         description: "This is product 11",
         content: "add some content to show in product page......",
         Popular: 0,
@@ -173,7 +173,7 @@ export const products = [
     {
         image: list_item12,
         name: "Item 12",
-        sku: "123456",
+        sku: "12",
         description: "This is product 12",
         content: "add some content to show in product page......",
         Popular: 0,
@@ -182,7 +182,7 @@ export const products = [
     {
         image: list_item13,
         name: "Item 13",
-        sku: "123456",
+        sku: "13",
         description: "This is product 13",
         content: "add some content to show in product page......",
         Popular: 0,
@@ -191,7 +191,7 @@ export const products = [
     {
         image: list_item14,
         name: "Item 14",
-        sku: "123456",
+        sku: "14",
         description: "This is product 14",
         content: "add some content to show in product page......",
         Popular: 0,
@@ -200,7 +200,7 @@ export const products = [
     {
         image: list_item15,
         name: "Item 15",
-        sku: "123456",
+        sku: "15",
         description: "This is product 15",
         content: "add some content to show in product page......",
         Popular: 0,

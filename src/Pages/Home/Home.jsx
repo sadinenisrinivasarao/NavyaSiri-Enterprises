@@ -4,7 +4,7 @@ import { carousel_assets } from '../../assets/assets';
 import MenuList from '../../Components/MenuList/MenuList';
 import "./Home.css";
 import Popular from '../../Components/Popular/Popular';
-import Footer from '../../Components/Footer/Footer';
+
 
 const Home = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -18,7 +18,7 @@ const Home = () => {
       <MenuList onCategorySelect={handleCategorySelect} />
       <hr />
       <Popular selectedCategory={selectedCategory} />
-      <Footer/>
+    
     </div>
   );
 };

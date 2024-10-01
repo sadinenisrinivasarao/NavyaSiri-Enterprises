@@ -1,31 +1,36 @@
 import React from 'react';
 import './Navbar.css';
-import { Link } from 'react-router-dom';
+// Import Link from both react-router-dom and react-scroll
+import { Link as RouterLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Navbar = () => {
   return (
     <div className='navBar_div'>
       <h3 className='Company_name'>
-        <Link to="/">NavyaSiri Enterprises</Link>
+        <RouterLink to="/">NavyaSiri Enterprises</RouterLink>
       </h3>
       <nav>
         <ul className='nav_links'>
           <li>
-            <Link to="/">Home</Link>
+            <RouterLink to="/">Home</RouterLink>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <RouterLink to="/about">About</RouterLink>
           </li>
           <li>
-            <Link to="/products">Products</Link>
+            
+            <ScrollLink to="products" smooth={true} duration={500}>
+              Products
+            </ScrollLink>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <RouterLink to="/contact">Contact</RouterLink>
           </li>
         </ul>
       </nav>
     </div>
   );
-}
+};
 
 export default Navbar;

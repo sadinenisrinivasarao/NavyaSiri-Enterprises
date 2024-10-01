@@ -2,6 +2,7 @@ import React from 'react';
 import { products } from "../../assets/assets";
 import './Popular.css';
 import Item from '../Items/Item';
+import { Element } from 'react-scroll';
 
 const Popular = ({ selectedCategory }) => {
   const filteredProducts = selectedCategory
@@ -9,6 +10,8 @@ const Popular = ({ selectedCategory }) => {
     : products.filter(product => product.Popular === 1); 
 
   return (
+    <Element name="products" className="element" >
+
     <div className='product_items'>
       
       <h2 className='product_title'>
@@ -27,6 +30,7 @@ const Popular = ({ selectedCategory }) => {
         )}
       </div>
     </div>
+    </Element>
   );
 };
 
