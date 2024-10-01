@@ -15,6 +15,7 @@ const Footer = () => {
             <div className="contact-detail ">
               <i className="fa-solid fa-envelope"></i>
               <p>navyasirienterprices@gmail.com</p>
+              
             </div>
             <div className="contact-detail ">
               <i className="fa-solid fa-phone"></i>
