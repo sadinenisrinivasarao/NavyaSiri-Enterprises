@@ -1,0 +1,42 @@
+.navBar_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3581bb;
+    padding: 0% 10%;
+    gap: 20%;
+}
+
+.Company_name {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.Company_name a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.nav_links li {
+    font-size: 1rem;
+}
+
+.nav_links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 650;
+    font-size: 16px;
+
+}

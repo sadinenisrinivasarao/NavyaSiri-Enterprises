@@ -1,0 +1,40 @@
+.menu_item img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.shop_products {
+    margin-top: 5%;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.shop_products h3 {
+    font-size: 30px;
+}
+
+.menu_list {
+    display: flex;
+    justify-content: space-evenly;
+
+    gap: 6%;
+    overflow-x: scroll;
+}
+
+.menu_list::-webkit-scrollbar {
+    display: none;
+}
+
+.menu_item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu_item:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
