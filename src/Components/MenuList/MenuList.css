@@ -38,3 +38,11 @@
     cursor: pointer;
     transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+    .shop_products {
+
+        width: 100%;
+        margin-left: 0%;
+    }
+}

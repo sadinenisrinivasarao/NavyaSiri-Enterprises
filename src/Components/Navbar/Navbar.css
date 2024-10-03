@@ -54,7 +54,7 @@
     cursor: pointer;
 }
 
-/* Media Query for Mobile */
+
 @media (max-width: 768px) {
     .nav_menu {
         position: absolute;
