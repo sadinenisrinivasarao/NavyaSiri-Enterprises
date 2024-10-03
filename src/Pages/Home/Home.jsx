@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Carousel from '../../Components/Carousel/Carousel';
 import { carousel_assets } from '../../assets/assets'; 
 import MenuList from '../../Components/MenuList/MenuList';
@@ -7,6 +7,10 @@ import Popular from '../../Components/Popular/Popular';
 
 
 const Home = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const handleCategorySelect = (category) => {
     setSelectedCategory(category);

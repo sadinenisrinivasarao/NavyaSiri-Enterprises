@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'; // Assuming you have a CSS file for styles
+import './Footer.css'; 
 
 const Footer = () => {
   return (
@@ -61,7 +61,7 @@ const Footer = () => {
 
           
 
-          <button type="submit" className="srinivas-animation">
+          <button type="submit" >
             Submit
           </button>
         </form>

@@ -1,4 +1,4 @@
-import Popular from "../Components/Popular/Popular";
+
 import carousel_img1 from "./Carousel_img1.png";
 import carousel_img2 from "./Carousel_img2.png";
 import carousel_img3 from "./Carousel_img3.png";

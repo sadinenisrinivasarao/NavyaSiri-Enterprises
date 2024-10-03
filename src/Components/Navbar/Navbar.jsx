@@ -1,14 +1,26 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import { Link as RouterLink } from 'react-router-dom';
-import { Link as ScrollLink } from 'react-scroll';
+import { Link as RouterLink, useNavigate } from 'react-router-dom';
+import {  animateScroll as scroll } from 'react-scroll'; // Added animateScroll for custom scrolling
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false); 
+  const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate(); 
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen); 
+    setMenuOpen(!menuOpen);
+  };
+
+  const handleProductsClick = () => {
+    toggleMenu();
+    navigate("/");
+    setTimeout(() => {
+      scroll.scrollTo(document.getElementById("products").offsetTop, {
+        duration: 100,
+        smooth: true,
+      });
+    });
   };
 
   return (
@@ -29,9 +41,7 @@ const Navbar = () => {
             <RouterLink to="/about" onClick={toggleMenu}>About</RouterLink>
           </li>
           <li>
-            <ScrollLink to="products" smooth={true} duration={500} onClick={toggleMenu}>
-              Products
-            </ScrollLink>
+            <a onClick={handleProductsClick}>Products</a> 
           </li>
           <li>
             <RouterLink to="/contact" onClick={toggleMenu}>Contact</RouterLink>

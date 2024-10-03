@@ -1,0 +1,35 @@
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: #f8f8f8;
+}
+
+.contact-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.contact-info {
+    margin: 10px 0;
+}
+
+.contact-info i {
+    font-size: 2rem;
+    color: #3581bb;
+}
+
+.contact-info h4 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+}

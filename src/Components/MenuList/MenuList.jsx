@@ -4,7 +4,7 @@ import "./MenuList.css";
 
 const MenuList = ({ onCategorySelect }) => {
   return (
-    <div className='shop_products' id='products'>
+    <div className='shop_products' >
       <h3>Explore our products</h3>
       <div className='menu_list'>
         {list_items.map((item, index) => (

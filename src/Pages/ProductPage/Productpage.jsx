@@ -1,15 +1,19 @@
-import React from 'react';
+import  { React, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { products } from '../../assets/assets'; // Import your product list
+import { products } from '../../assets/assets'; 
 
 const ProductPage = () => {
-  const { sku } = useParams(); // Get SKU from URL
-  const product = products.find(item => item.sku === sku); // Find the product by SKU
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
+  const { sku } = useParams(); 
+  const product = products.find(item => item.sku === sku);
 
   if (!product) {
     return <div>Product not found!</div>;
   }
-
+  
+ 
   return (
     <div className='product_page'>
       

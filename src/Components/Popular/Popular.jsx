@@ -12,7 +12,7 @@ const Popular = ({ selectedCategory }) => {
   return (
     <Element name="products" className="element" >
 
-    <div className='product_items'>
+    <div className='product_items' id='products'>
       
       <h2 className='product_title'>
         {selectedCategory ? `${selectedCategory} items` : 'Our most popular items'}
