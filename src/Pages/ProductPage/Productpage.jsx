@@ -1,7 +1,7 @@
 import  { React, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { products } from '../../assets/assets'; 
-
+import "./ProductPage.css"
 const ProductPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0); 

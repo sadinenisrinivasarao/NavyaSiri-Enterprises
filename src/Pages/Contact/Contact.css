@@ -1,7 +1,8 @@
 .contact-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     padding: 50px;
     background-color: #f8f8f8;
 }
@@ -11,7 +12,9 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 30%;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
     text-align: center;
 }
 
@@ -32,4 +35,29 @@
 .contact-info p {
     margin: 5px 0;
     font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .contact-container {
+        justify-content: space-around;
+    }
+
+    .contact-card {
+        width: 30%;
+        max-width: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact-container {
+        padding: 70px;
+    }
+
+    .contact-info h4 {
+        font-size: 1.75rem;
+    }
+
+    .contact-info p {
+        font-size: 1.1rem;
+    }
 }
