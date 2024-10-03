@@ -13,7 +13,8 @@ const Contact = () => {
         <div className="contact-info">
           <i className="fas fa-phone-alt"></i>
           <h4>Phone</h4>
-          <p>(+91) 9493014601 , (+91) 8886929558</p>
+          <p>(+91) 9493014601 </p>
+          <p>(+91) 8886929558</p>
          
         </div>
       </div>

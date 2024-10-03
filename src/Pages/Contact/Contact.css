@@ -1,8 +1,7 @@
 .contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     padding: 50px;
     background-color: #f8f8f8;
 }
@@ -12,10 +11,12 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 100%;
-    max-width: 300px;
-    margin: 10px;
     text-align: center;
+    transition: transform 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
 }
 
 .contact-info {
@@ -37,14 +38,16 @@
     font-size: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1024px) {
     .contact-container {
-        justify-content: space-around;
+        grid-template-columns: repeat(2, 1fr);
     }
+}
 
-    .contact-card {
-        width: 30%;
-        max-width: none;
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
     }
 }
 

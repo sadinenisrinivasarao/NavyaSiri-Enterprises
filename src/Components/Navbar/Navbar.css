@@ -76,8 +76,8 @@ html {
 
     .nav_links {
         flex-direction: column;
-        gap: 6rem;
-        margin-top: 20px;
+        gap: 3rem;
+        margin-top: 50px;
     }
 
     .menu-icon {
