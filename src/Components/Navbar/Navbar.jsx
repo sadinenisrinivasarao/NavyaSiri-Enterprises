@@ -1,26 +1,28 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import { Link as RouterLink, useNavigate } from 'react-router-dom';
-import {  animateScroll as scroll } from 'react-scroll'; // Added animateScroll for custom scrolling
+import { animateScroll as scroll } from 'react-scroll';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const navigate = useNavigate(); 
-
+  const navigate = useNavigate();
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+    setMenuOpen(prev => !prev); 
   };
 
   const handleProductsClick = () => {
-    toggleMenu();
-    navigate("/");
+    setMenuOpen(false); 
+    navigate("/"); 
     setTimeout(() => {
-      scroll.scrollTo(document.getElementById("products").offsetTop, {
-        duration: 100,
-        smooth: true,
-      });
-    });
+      const productsSection = document.getElementById("products");
+      if (productsSection) {
+        scroll.scrollTo(productsSection.offsetTop, {
+          duration: 100,
+          smooth: true,
+        });
+      }
+    }, 100); 
   };
 
   return (
@@ -32,19 +34,19 @@ const Navbar = () => {
         {menuOpen ? <FaTimes /> : <FaBars />}
       </div>
 
-      <nav className={`nav_menu ${menuOpen ? 'active' : ''}`}>
+      <nav className={`nav_menu ${menuOpen ? 'active' : 'hidden'}`}>
         <ul className='nav_links'>
           <li>
-            <RouterLink to="/" onClick={toggleMenu}>Home</RouterLink>
+            <RouterLink to="/" onClick={() => setMenuOpen(false)}>Home</RouterLink>
           </li>
           <li>
-            <RouterLink to="/about" onClick={toggleMenu}>About</RouterLink>
+            <RouterLink to="/about" onClick={() => setMenuOpen(false)}>About</RouterLink>
           </li>
           <li>
-            <a onClick={handleProductsClick}>Products</a> 
+            <a onClick={handleProductsClick}>Products</a>
           </li>
           <li>
-            <RouterLink to="/contact" onClick={toggleMenu}>Contact</RouterLink>
+            <RouterLink to="/contact" onClick={() => setMenuOpen(false)}>Contact</RouterLink>
           </li>
         </ul>
       </nav>

@@ -57,12 +57,13 @@ html {
 
 @media (max-width: 768px) {
     .nav_menu {
+        display: none;
         position: absolute;
         top: 60px;
         right: 0;
         background-color: #3581bb;
         height: 100vh;
-        width: 100%;
+        width: 50%;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -71,7 +72,8 @@ html {
     }
 
     .nav_menu.active {
-        transform: translateX(50%);
+        transform: translateX(0);
+        display: block;
     }
 
     .nav_links {
@@ -83,12 +85,10 @@ html {
     .menu-icon {
         display: block;
     }
+}
 
-    nav {
-        display: none;
-    }
 
-    nav.active {
-        display: block;
-    }
+.blur-background {
+    backdrop-filter: blur(5px);
+    transition: backdrop-filter 0.3s ease;
 }
